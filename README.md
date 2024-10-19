@@ -1,7 +1,7 @@
 
 # Depth Map and Point Cloud Estimation
 
-Questo progetto implementa un modello basato su rete neurale U-Net per stimare mappe di profondità da immagini di input. Le mappe di profondità stimate possono essere utilizzate per generare point cloud 3D.
+Questo codice implementa un modello basato su rete neurale U-Net per stimare mappe di profondità da immagini stereoscopiche. Le mappe di profondità stimate vengono utilizzate per generare point cloud 3D.
 
 ## Requisiti
 
