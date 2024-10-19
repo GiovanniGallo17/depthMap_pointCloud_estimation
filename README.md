@@ -7,23 +7,8 @@ Questo progetto implementa un modello basato su rete neurale U-Net per stimare m
 
 Prima di eseguire il codice, assicurati di avere:
 
-1. **Python 3.x** installato.
-2. Una GPU compatibile con CUDA per accelerare l'addestramento del modello.
-3. **Jupyter Notebook** o **Jupyter Lab** per eseguire il notebook `.ipynb`.
-
-### Dipendenze
-
-Installa le dipendenze richieste eseguendo:
-
-```bash
-pip install -r requirements.txt
-```
-
-Se il file `requirements.txt` non è presente, puoi installare manualmente le librerie essenziali:
-
-```bash
-pip install torch torchvision numpy matplotlib tqdm pillow open3d
-```
+1. Una GPU compatibile con CUDA per accelerare l'addestramento del modello.
+2. **Jupyter Notebook** o **Jupyter Lab** per eseguire il notebook `.ipynb`.
 
 ## Struttura del Progetto
 
@@ -106,23 +91,6 @@ Esegui la cella che genera una point cloud a partire dalla mappa di profondità 
 ### 5. Fine dell'Esecuzione
 
 Al termine dell'addestramento e della valutazione, puoi salvare il modello addestrato per futuri utilizzi o testarlo su nuovi dati di input. 
-
----
-
-## Esempio di Comando per la Point Cloud
-
-Per generare una point cloud da una mappa di profondità, puoi usare il seguente frammento di codice nel notebook:
-
-```python
-depth_image = np.array(Image.open('path_to_depth_image.png'))
-point_cloud = o3d.geometry.PointCloud.create_from_depth_image(
-    o3d.geometry.Image(depth_image), 
-    o3d.camera.PinholeCameraIntrinsic()
-)
-o3d.visualization.draw_geometries([point_cloud])
-```
-
-Questo genererà una point cloud a partire dalla mappa di profondità e la visualizzerà utilizzando Open3D.
 
 ---
 
