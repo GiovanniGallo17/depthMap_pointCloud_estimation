@@ -47,41 +47,7 @@ jupyter notebook
 
 ### 3. Esecuzione del Notebook
 
-Una volta aperto il notebook, segui i seguenti passi per eseguire il codice:
-
-#### a. **Importazioni e Inizializzazioni**
-
-Esegui la prima cella per importare tutte le librerie necessarie, tra cui `torch`, `numpy`, `matplotlib`, e `open3d`.
-
-#### b. **Definizione del Modello**
-
-Il notebook definisce il modello U-Net, utilizzato per la stima della mappa di profondità. Il modello è suddiviso in moduli di convoluzione e upsampling. Le celle seguenti creano l'architettura e ne stampano un riepilogo.
-
-#### c. **Caricamento dei Dati**
-
-Esegui la cella dedicata al caricamento del dataset. Verranno letti i dati dalle cartelle `immagini/` e `mappe_profondità/`. Assicurati che le immagini siano in un formato supportato come `.png` o `.jpg`.
-
-#### d. **Addestramento del Modello**
-
-Esegui la cella di addestramento, che avvierà il training della rete neurale U-Net. Vengono utilizzati la discesa del gradiente (stochastic gradient descent) e la riduzione del tasso di apprendimento tramite lo scheduler `ReduceLROnPlateau`.
-
-L'addestramento produce metriche come la **MSE (Mean Squared Error)** e la **RMSE (Root Mean Squared Error)**, che verranno visualizzate in output.
-
-Assicurati di monitorare il processo di addestramento e i risultati, visualizzando la perdita (loss) a ogni epoca.
-
-#### e. **Valutazione**
-
-Dopo l'addestramento, esegui le celle per la valutazione del modello. Verranno calcolate metriche come:
-
-- **MSE**: Errore quadratico medio.
-- **RMSE**: Radice dell'errore quadratico medio.
-- **PSNR**: Rapporto segnale-rumore di picco (Peak Signal-to-Noise Ratio).
-
-Il notebook esegue automaticamente la normalizzazione delle mappe di profondità stimate rispetto a quelle ground truth per facilitare il confronto.
-
-#### f. **Generazione della Point Cloud**
-
-Esegui la cella che genera una point cloud a partire dalla mappa di profondità stimata. Utilizza la libreria **Open3D** per visualizzare la point cloud e salvare i risultati in formato `.ply` o `.pcd`.
+Una volta aperto il notebook, eseguire il codice una cella alla volta in ordine.
 
 ### 4. Salvataggio e Visualizzazione dei Risultati
 
@@ -97,4 +63,3 @@ Al termine dell'addestramento e della valutazione, puoi salvare il modello addes
 ### Note
 
 - **GPU**: È altamente consigliato eseguire il codice su una GPU per migliorare le prestazioni, specialmente durante l'addestramento.
-- **Visualizzazione 3D**: La visualizzazione della point cloud richiede l'installazione della libreria Open3D e un sistema in grado di gestire grafica 3D.
