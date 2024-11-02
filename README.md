@@ -26,6 +26,7 @@ Per eseguire questo codice, assicurati di avere le seguenti librerie installate:
 Puoi installare tutte le dipendenze con il seguente comando:
 ```bash
 pip install torch torchvision numpy matplotlib tqdm open3d Pillow
+```
 
 ## Struttura del Progetto
 
