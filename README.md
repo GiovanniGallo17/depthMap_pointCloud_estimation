@@ -10,6 +10,23 @@ Prima di eseguire il codice, assicurati di avere:
 1. Una GPU compatibile con CUDA per accelerare l'addestramento del modello.
 2. **Jupyter Notebook** o **Jupyter Lab** per eseguire il notebook `.ipynb`.
 
+## Dipendenze
+
+Per eseguire questo codice, assicurati di avere le seguenti librerie installate:
+
+- Python 3.7+
+- [PyTorch](https://pytorch.org/get-started/locally/) 
+- `torchvision`
+- `numpy`
+- `matplotlib`
+- `tqdm`
+- `open3d`
+- `Pillow`
+
+Puoi installare tutte le dipendenze con il seguente comando:
+```bash
+pip install torch torchvision numpy matplotlib tqdm open3d Pillow
+
 ## Struttura del Progetto
 
 Assicurati di avere le seguenti cartelle e file organizzati correttamente:
