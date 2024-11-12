@@ -32,10 +32,7 @@ pip install torch torchvision numpy matplotlib tqdm open3d Pillow
 
 ### 1. Preparazione del Dataset
 
-Organizza il dataset nelle due cartelle:
-
-- `immagini/`: conterrà le immagini RGB (o in scala di grigi) di input.
-- `mappe_profondità/`: conterrà le mappe di profondità corrispondenti, che serviranno come ground truth durante l'addestramento.
+Organizza il dataset in un'unica cartella, il codice suddividerà il path in immagini sinistre, destre e disparity.
 
 ### 2. Apertura del Notebook
 
