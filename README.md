@@ -28,19 +28,6 @@ Puoi installare tutte le dipendenze con il seguente comando:
 pip install torch torchvision numpy matplotlib tqdm open3d Pillow
 ```
 
-## Struttura del Progetto
-
-Assicurati di avere le seguenti cartelle e file organizzati correttamente:
-
-```
-├── depthMap_pointCloud_estimation.ipynb  # Notebook principale
-├── immagini/                            # Cartella con le immagini di input
-├── mappe_profondità/                    # Cartella con le mappe di profondità ground truth
-```
-
-- **immagini/**: cartella contenente le immagini di input.
-- **mappe_profondità/**: cartella contenente le mappe di profondità ground truth corrispondenti alle immagini.
-
 ## Esecuzione del Codice
 
 ### 1. Preparazione del Dataset
