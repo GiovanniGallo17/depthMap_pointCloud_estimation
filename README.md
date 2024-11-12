@@ -36,7 +36,6 @@ Assicurati di avere le seguenti cartelle e file organizzati correttamente:
 ├── depthMap_pointCloud_estimation.ipynb  # Notebook principale
 ├── immagini/                            # Cartella con le immagini di input
 ├── mappe_profondità/                    # Cartella con le mappe di profondità ground truth
-└── requirements.txt                     # File delle dipendenze (opzionale)
 ```
 
 - **immagini/**: cartella contenente le immagini di input.
