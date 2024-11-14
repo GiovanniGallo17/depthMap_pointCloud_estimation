@@ -64,3 +64,4 @@ Al termine dell'addestramento e della valutazione, puoi salvare il modello addes
 ### Note
 
 - **GPU**: È altamente consigliato eseguire il codice su una GPU per migliorare le prestazioni, specialmente durante l'addestramento.
+- **Modello**: Nel caso in cui si volesse utilizzare un modello pre-addestrato (.pth), NON eseguire la cella 5 per riaddestrare il modello, nella cella 7 inserire il percorso in cui è presente il modello addestrato che si vuole utilizzare.
